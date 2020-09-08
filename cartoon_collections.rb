@@ -30,9 +30,8 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-    valid_calls.each do |value|
-      if value == planeteer_calls
-        return value
+  valid_calls.find do |is_it_valid|
+  planeteer_calls.include?(maybe_cheese)
         # binding.pry
       end
     end
